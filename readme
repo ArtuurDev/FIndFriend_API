@@ -1,0 +1,28 @@
+Requisitos Funcionais (RF)
+[] RF01: Deve ser possível cadastrar um pet com informações como nome, idade, tamanho e características.
+[] RF02: Deve ser possível listar todos os pets disponíveis para adoção em uma cidade.
+[] RF03: Deve ser possível filtrar pets por características como idade, tamanho ou outras especificações.
+[] RF04: Deve ser possível visualizar detalhes de um pet, incluindo informações como nome, descrição e dados de contato da ORG.
+[] RF05: Deve ser possível que uma ORG se cadastre na aplicação, fornecendo informações como endereço e número de WhatsApp.
+[] RF06: Deve ser possível realizar login como uma ORG para acessar funcionalidades administrativas.
+
+[] Requisitos Não Funcionais (RNF)
+[] RNF01: A aplicação deve utilizar o framework Fastify para a construção do backend.
+[] RNF02: O banco de dados utilizado será o PostgreSQL, gerenciado através do Docker.
+[] RNF03: Todos os endpoints devem ser testados utilizando a biblioteca Vitest.
+[] RNF04: O código deve seguir os princípios SOLID para garantir manutenibilidade e escalabilidade.
+[] RNF05: A aplicação deve ser implementada seguindo o padrão RESTful para suas rotas.
+[] RNF06: Deve ser configurado um pipeline de CI/CD para automatizar testes, builds e deploy.
+[] RNF07: A aplicação deve ser responsiva e otimizada para diferentes dispositivos e navegadores.
+[] RNF08: Deve garantir segurança no armazenamento de senhas utilizando hash (ex.: bcrypt).
+[] RNF09: O sistema deve suportar alta concorrência, permitindo múltiplos acessos simultâneos sem degradação significativa de performance.
+
+
+[] Regras de Negócio (RN)
+[] RN01: Para listar os pets disponíveis, o usuário deve obrigatoriamente informar a cidade.
+[] RN02: Uma ORG deve fornecer um endereço válido e um número de WhatsApp no momento do cadastro.
+[] RN03: Cada pet cadastrado deve estar associado a uma ORG específica.
+[] RN04: O contato entre o usuário interessado em adoção e a ORG será feito via WhatsApp.
+[] RN05: Os filtros de busca por características, além da cidade, são opcionais.
+[] RN06: Apenas ORGs autenticadas podem acessar funcionalidades administrativas no sistema].
+ 
